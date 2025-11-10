@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="open-sans-basic">
+    <header>
+      <!-- Navbar -->
+      <div class="navbar bg-sky-200 shadow-sm p-5">
+        <div class="flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li>
+                <a>Contact</a>
+              </li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-3xl font-bold">QuizCraft</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="font-bold">Home</a></li>
+            <li>
+              <a class="font-bold">Contact</a>
+            </li>
+            <li><a class="font-bold">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="mx-3">
+            <a class="btn btn-lg">Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ......................................Banner Section -->
+      <section
+        class="flex flex-col-reverse lg:flex-row items-center justify-between px-8 py-16 bg-base-100 mt-16">
+        <!-- Left: Text Section -->
+        <div class="w-full lg:w-1/2 text-center lg:text-left space-y-6">
+          <h1 class="text-5xl font-bold">QuizCraft</h1>
+          <p class="text-base leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aliquam ea placeat
+            repellendus quam officiis quos ut sapiente numquam illum, labore exercitationem dolorum
+            temporibus saepe nemo dicta facere obcaecati atque? Perspiciatis odio cumque vitae
+            deserunt quibusdam eius minus, dolores expedita, unde non repellat libero illo minima
+            optio harum ipsam architecto.
+          </p>
+
+          <!-- Buttons for Student and Teacher Registration -->
+          <div class="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4">
+            <a href="studentReg.html" class="btn btn-primary w-full sm:w-auto"
+              >Register as Student</a
+            >
+            <a href="teacherReg.html" class="btn btn-secondary w-full sm:w-auto"
+              >Register as Teacher</a
+            >
+          </div>
+        </div>
+
+        <!-- Right: Image Section -->
+        <div class="w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0">
+          <img
+            src="Assets/Hero-image-asseement.png"
+            alt="QuizCraft Hero"
+            class="w-3/4 max-w-md object-contain" />
+        </div>
+      </section>
+      <!-- .......................................feature Section -->
+
+      <section class="py-16 bg-base-100 text-center">
+        <h2 class="text-4xl font-bold mb-12">Why Choose QuizCraft?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8">
+          <div class="p-6 bg-white rounded-lg shadow-md">
+            <div class="text-5xl mb-4">🎯</div>
+            <h3 class="font-bold text-xl mb-2">Personalized Quizzes</h3>
+            <p>Tailor quizzes to your skill level and track your progress over time.</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow-md">
+            <div class="text-5xl mb-4">📊</div>
+            <h3 class="font-bold text-xl mb-2">Performance Analytics</h3>
+            <p>Get detailed reports and insights to identify strengths and weaknesses.</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow-md">
+            <div class="text-5xl mb-4">📚</div>
+            <h3 class="font-bold text-xl mb-2">Enroll New Course</h3>
+            <p>Browse available courses and enroll to start learning new skills immediately.</p>
+          </div>
+
+          <div class="p-6 bg-white rounded-lg shadow-md">
+            <div class="text-5xl mb-4">🌐</div>
+            <h3 class="font-bold text-xl mb-2">Anywhere, Anytime</h3>
+            <p>Take quizzes online on desktop or mobile, anytime you want.</p>
+          </div>
+        </div>
+      </section>
+      <!-- ..........................................FAQ -->
+      <section class="py-16 bg-sky-200 text-center px-8">
+        <h2 class="text-4xl font-bold mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-4 max-w-2xl mx-auto text-left">
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+            <div class="collapse-title text-lg font-medium">How do I register on QuizCraft?</div>
+            <div class="collapse-content">
+              Click the “Register Here” button, fill in your details, and start taking quizzes
+              immediately.
+            </div>
+          </div>
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+            <div class="collapse-title text-lg font-medium">Can I track my progress?</div>
+            <div class="collapse-content">
+              QuizCraft provides detailed analytics to monitor your performance and improvement.
+            </div>
+          </div>
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+            <div class="collapse-title text-lg font-medium">Are the quizzes timed?</div>
+            <div class="collapse-content">
+              You can choose timed or untimed quizzes based on your preference.
+            </div>
+          </div>
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+            <div class="collapse-title text-lg font-medium">
+              Can I use QuizCraft on mobile devices?
+            </div>
+            <div class="collapse-content">
+              QuizCraft is fully responsive and works on both mobile and tablet devices.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <footer class="bg-sky-100 py-8">
+        <div class="max-w-6xl mx-auto px-8 text-center text-gray-800">
+          <h3 class="text-2xl font-bold mb-4">QuizCraft</h3>
+          <p class="mb-4">© 2025 QuizCraft. All rights reserved.</p>
+          <div class="flex justify-center space-x-6 mb-4">
+            <a href="#" class="hover:text-rose-600">Home</a>
+            <a href="#" class="hover:text-rose-600">About</a>
+            <a href="#" class="hover:text-rose-600">Contact</a>
+            <a href="#" class="hover:text-rose-600">Privacy Policy</a>
+          </div>
+          <p class="text-sm text-gray-700">
+            Follow us on <a href="#" class="font-medium hover:text-rose-600">Facebook</a>,
+            <a href="#" class="font-medium hover:text-rose-600">Twitter</a>,
+            <a href="#" class="font-medium hover:text-rose-600">Instagram</a>
+          </p>
+        </div>
+      </footer>
+    </footer>
+    <!-- Hero -->
+  </body>
+</html>
