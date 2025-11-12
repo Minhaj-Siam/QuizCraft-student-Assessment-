@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-base-100">
+    <!-- Drawer -->
+    <div class="drawer drawer-mobile">
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+
+      <!-- Main content -->
+      <div class="drawer-content transition-all duration-300" id="main-content">
+        <!-- Navbar -->
+        <div class="navbar bg-sky-200 shadow-sm p-5 flex justify-between items-center">
+          <div class="flex items-center space-x-3">
+            <!-- Drawer Toggle Button visible on all screens -->
+            <label for="my-drawer" class="btn btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <!-- Logo -->
+            <a class="btn btn-ghost text-3xl font-bold">QuizCraft</a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="font-bold">Home</a></li>
+              <li><a class="font-bold">Contact</a></li>
+              <li><a class="font-bold">About</a></li>
+              <li><a class="font-bold">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Login Dropdown -->
+          <div>
+            <div class="mx-3">
+              <button class="btn btn-lg"><a href="index.html">Logout</a></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section
+          class="hero bg-gradient-to-r from-sky-100 to-sky-200 rounded-2xl p-8 mb-10 flex flex-col md:flex-row items-center justify-between shadow-sm mx-4 mt-5">
+          <div>
+            <h1 class="text-3xl md:text-4xl font-bold text-sky-800 mb-2" id="greeting">
+              Welcome back, <span class="text-sky-600" id="greeting-name">Student</span> 👋
+            </h1>
+            <p class="text-base md:text-lg text-gray-700 max-w-xl">
+              Continue your learning journey — track progress, attempt assessments, and manage your
+              courses all in one place.
+            </p>
+            <button class="btn btn-primary mt-4">Continue Learning</button>
+          </div>
+          <div class="mt-6 md:mt-0">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png"
+              alt="Student Avatar"
+              class="w-40 md:w-48 rounded-full border-4 border-sky-300 shadow-md" />
+          </div>
+        </section>
+        <!-- Dashboard Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-4">
+          <!-- Card: My Courses -->
+          <div class="card bg-base-100 shadow-md hover:shadow-lg transition">
+            <figure class="px-10 pt-10">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1828/1828765.png"
+                alt="My Courses"
+                class="rounded-xl w-24 h-24" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">My Courses</h2>
+              <p>View and manage all your enrolled courses.</p>
+              <div class="card-actions">
+                <a href="#" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card: Assessments -->
+          <div class="card bg-base-100 shadow-md hover:shadow-lg transition">
+            <figure class="px-10 pt-10">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3176/3176299.png"
+                alt="Assessments"
+                class="rounded-xl w-24 h-24" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Assessments</h2>
+              <p>Attempt quizzes and assignments to test your knowledge.</p>
+              <div class="card-actions">
+                <a href="#" class="btn btn-primary">Start</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card: Results -->
+          <div class="card bg-base-100 shadow-md hover:shadow-lg transition">
+            <figure class="px-10 pt-10">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3616/3616913.png"
+                alt="Results"
+                class="rounded-xl w-24 h-24" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Results</h2>
+              <p>View your quiz scores and feedback.</p>
+              <div class="card-actions">
+                <a href="#" class="btn btn-primary">Check</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="drawer-side">
+        <label for="my-drawer" class="drawer-overlay"></label>
+        <ul class="menu bg-base-200 w-64 p-4 text-base-content">
+          <li><a>📘 My Courses</a></li>
+          <li><a>📝 Assessment</a></li>
+          <li><a>📊 Result</a></li>
+          <li><a>🎯 Progress Tracker</a></li>
+          <li><a>⚙️ Settings</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="Javascripts/dashBoard.js"></script>
+  </body>
+</html>

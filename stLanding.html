@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard - QuizCraft</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- DaisyUI + Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-base-200 open-sans-basic">
+    <!-- Navbar -->
+    <div class="navbar bg-sky-200 shadow-sm p-5">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-3xl font-bold" href="#">QuizCraft</a>
+      </div>
+      <div>
+        <a href="#" class="btn btn-sm btn-outline">Logout</a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero bg-base-100 py-16 px-6">
+      <div class="hero-content text-center">
+        <div class="max-w-2xl">
+          <h1 class="text-5xl font-bold mb-4">Welcome Back, Student 👋</h1>
+          <p class="text-lg text-gray-600 mb-6">
+            Ready to learn and test your skills? Explore your dashboard, enroll in new courses, or
+            attempt quizzes.
+          </p>
+          <button class="btn btn-primary btn-wide">Start Learning</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Actions Section -->
+    <section class="py-20 px-6 bg-base-200">
+      <h2 class="text-3xl font-bold text-center mb-10">Quick Actions</h2>
+
+      <div class="flex flex-wrap justify-center gap-10">
+        <!-- View Dashboard -->
+        <div class="card bg-base-100 w-80 shadow-md hover:shadow-lg transition">
+          <figure class="px-10 pt-10">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1828/1828765.png"
+              alt="Dashboard"
+              class="rounded-xl w-24 h-24" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">View Dashboard</h2>
+            <p>Check your progress, grades, and performance in courses.</p>
+            <div class="card-actions">
+              <a href="studentDashBoard.html" class="btn btn-primary">Go to Dashboard</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enroll New Course -->
+        <div class="card bg-base-100 w-80 shadow-md hover:shadow-lg transition">
+          <figure class="px-10 pt-10">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+              alt="Enroll"
+              class="rounded-xl w-24 h-24" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Enroll New Course</h2>
+            <p>Browse available courses and enroll to start learning new skills.</p>
+            <div class="card-actions">
+              <a href="#" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attempt Quiz -->
+        <div class="card bg-base-100 w-80 shadow-md hover:shadow-lg transition">
+          <figure class="px-10 pt-10">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+              alt="Quiz"
+              class="rounded-xl w-24 h-24" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Attempt Quiz</h2>
+            <p>Take quizzes on your enrolled courses and track your scores.</p>
+            <div class="card-actions">
+              <a href="#" class="btn btn-primary">Start Quiz</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="open-sans-basic">
     <!--  -->
     <div class="navbar bg-sky-200 shadow-sm p-5">
       <div class="flex-1">
@@ -40,9 +40,10 @@
               <a>Contact</a>
             </li>
             <li><a>About</a></li>
+            <li><a>Privacy Policy</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-3xl font-bold" href="landing.html">QuizCraft</a>
+        <a class="btn btn-ghost text-3xl font-bold" href="index.html">QuizCraft</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
@@ -51,6 +52,7 @@
             <a class="font-bold">Contact</a>
           </li>
           <li><a class="font-bold">About</a></li>
+          <li><a class="font-bold">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
@@ -121,10 +123,23 @@
 
           <!-- Submit Button -->
           <div>
-            <button type="submit" class="btn btn-primary w-full">Register</button>
+            <button id="register" type="submit" class="btn btn-primary w-full">Register</button>
           </div>
         </form>
       </div>
     </section>
+    <!-- Modal section -->
+    <section>
+      <dialog id="my_modal" class="modal">
+        <div class="modal-box text-center">
+          <h3 class="text-lg font-bold">Registration Successful!</h3>
+          <p class="py-4">Click below to enter the site.</p>
+          <div class="modal-action justify-center">
+            <button id="enterSiteBtn" class="btn btn-primary">Enter Site</button>
+          </div>
+        </div>
+      </dialog>
+    </section>
+    <script src="Javascripts/registration.js"></script>
   </body>
 </html>
